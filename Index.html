@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITMAD Terminal Source Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="terminal">
+        <div class="terminal-header">
+            <span class="green">AITMAD:~#</span> <span id="typing-text"></span>
+        </div>
+
+        <div class="url-box">
+            <input type="text" id="urlInput" placeholder="Enter website URL...">
+            <button id="fetchBtn">Fetch</button>
+        </div>
+
+        <pre id="codeOutput" class="terminal-body"></pre>
+
+        <div class="buttons">
+            <button id="copyBtn">Copy</button>
+            <button id="downloadBtn">Download</button>
+        </div>
+    </div>
+
+    <div class="preview-section">
+        <iframe id="livePreview" sandbox="allow-scripts allow-same-origin"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
